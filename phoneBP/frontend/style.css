@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Permanent+Marker&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Fredoka One', cursive;
+} 
+.normal-header{
+    padding: 50px;
+background-color: /*rgb(201, 201, 201)*/ rgb(91,197,255);
+margin-bottom: 15px;
+position: fixed;
+transition: all 1s ease;
+}
+.header{
+    transition: 1s;
+}
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: rgb(21,188,194);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+   text-align: center;
+   top: calc(50vh - 75px);
+   left:calc(50vw - 75px);
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+.compare-div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+opacity: 0;
+    }
+}
+.white-header{
+    background-color: white;
+}
+.nav-item{
+  display: inline-block;
+}
+.nav-tabs{
+    float: right;
+    color: white;
+}
+.nav-header{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-header-blue{
+    color: rgb(91,197,255);
+}
+.nav-tab .fas{
+    margin: 2px;
+     color: rgb(91,197,255);;
+ 
+}
+.fa-ellipsis-h{
+    color:white;
+   transition: 1s;
+}
+#menu-bar{
+    display: none;
+font-size: 30px;
+
+}
+.comment-content{
+    margin: 20px;
+}
+.comment-div{
+    display: inline-block;
+vertical-align: top;
+}
+.comment{
+    text-align: left;
+}
+.comment-text{
+    background: rgba(255, 255, 255, 0.356);
+    padding:50px;
+    border-radius: 50%;
+    width: 25%;
+    word-wrap: break-word;
+}
+
+.reply-text{
+    background: rgba(255, 255, 255, 0.356);
+    padding:30px;
+    border-radius: 50%;
+    width: 25%;
+    word-wrap: break-word;
+    font-size: 10px;
+
+}
+.reply-header{
+    width: 30px;
+    height: 30px;
+ text-align: center;
+ padding: 5px;
+     border-radius: 50%;
+     font-size: 5px;
+     background-color: white;
+     color: rgb(91,197,255);
+     margin-right: 5px;
+}
+.comment-header{
+   width: 60px;
+   height: 60px;
+text-align: center;
+padding: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+    background-color: white;
+    color: rgb(91,197,255);
+    margin-right: 10px;
+}
+.comment-button{
+    color: white;
+    border: none;
+    box-shadow: none;
+    background-color: rgb(91,197,255);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline;
+}
+.form-input{
+    margin: 15px;
+   
+}
+textarea{
+    vertical-align: top;
+}
+.checked{
+    color: orange;
+}
+.rotate360{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.rotate90{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+.rotate180{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.rotate270{
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+}
+.nav-tab:hover .fas{
+color: white;
+transition: 1s;
+}
+.nav-tab{
+    display:inline;
+    margin-left: 4px;
+    font-size: 20px; 
+    cursor: pointer;
+}
+.search{
+padding: 250px;
+background: url('./img/_Blue_Iphone_5C_on_a_blue_background_046047_.jpg') no-repeat center center; 
+text-align: center;
+box-sizing: border-box;
+}
+.search h2{
+    font-size: 50px;
+    color: white;
+}
+
+.phone-div{
+  
+    font-size: 50px;
+margin: 2%;
+width: 20%;
+height: 20%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+display: inline-block;
+transition: 2s;
+}
+#view-reply{
+    text-decoration: underline;
+    color: blue;
+    font-size: 15px;
+    cursor: pointer;
+}
+.news{
+       background:rgb(91,197,255);
+}
+.details-button{
+    padding: 20px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgba(225,225,225);
+    border-radius: 5%;
+    cursor: pointer;
+    box-shadow: none;
+    border: solid 1px black;
+   width: 100%;
+   text-align: center;
+}
+.details-button:hover{
+    background-color: rgba(104, 0, 0, 0.815);
+    transition: 1s;
+}
+footer{
+    background: url('https://www.apple.com/v/iphone-se/c/images/meta/og__eop0rb3mevma_overview.png') center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    color: white;
+}
+.footer-section{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    margin-left: 50px;
+    color: white;
+}
+.footer-links{
+    list-style-type: none;
+}
+.footer-link{
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  padding: 0;
+  box-sizing: content-box;
+  border: none;
+}
+.footer-link:hover{
+    color: black;
+  
+}
+.footer-link .fab{
+    border: none;
+    padding: 0;
+}
+.footer-link:hover .fab{
+    background-color: white;
+   
+}
+.search-form-thing{
+    padding: 10px;
+    border: none;
+background-color: white;
+color: rgb(91,197,255);
+box-shadow: none;
+font-style: 'Fredoka One', cursive;
+}
+.search-form-thing:focus{
+    border: none;
+    outline-color: rgb(91,197,255);
+}
+.search-form-button:hover{
+    background-color: rgb(47,160,220);
+    color: white;
+    transition: 1s;
+}
+.phone-general{
+    text-align: center;
+    padding: 200px;
+    background-color: rgb(91,197,255);
+    color: white;
+}
+.general-specs{
+    text-align: center;
+}
+
+.general-specs-img{
+    box-shadow: rgb(91,197,255);
+    border: none;
+  margin: 20px;
+    height: 20%;
+}
+.general-spec-text{
+    margin: 5px;
+    border: 1px rgb(0, 0, 0);
+    display: inline-block;
+}
+.general{
+    margin: 10px;
+}
+table{
+    text-align: center;
+}
+.table-header{
+    text-align: center;
+    font-size: 30px;
+}
+.table-list{
+    list-style-type: none;
+}
+.table-row{
+    padding: 10px;
+    border-right: 1px white solid;
+}
+.review-text{
+    font-size: 1vw;
+}
+.spec-table{
+    overflow-x: auto;
+}
+.contact-us{
+    background: url('https://sevojno.org.rs/wp-content/uploads/2014/12/contact-us-icon.jpg') no-repeat  center center;
+    padding: 200px;
+  
+
+}
+.contact-us-header{
+text-align: center;
+padding: 20px;
+background-color: rgba(225, 225, 225, 0.164);
+width: 100%;
+}
+.cotact-us-form-div{
+    text-align: center;
+}
+.contact-us-form{
+    text-align: center;
+}
+.contact-us-form-element{
+    background-color: rgb(91,197,255);
+    color: white;
+    margin: 5px;
+margin-left:10%;
+
+   padding: 10px;
+   width: 85%;
+   border: none;
+   border-radius: 0.5rem;
+}
+.contact-us-form-button{
+    background-color: rgb(91,197,255);
+    color: white;
+    margin: 5px;
+margin-left:10%;
+
+   padding: 10px;
+cursor: pointer;
+
+   border: none;
+   border-radius: 0.5rem;
+}
+.contact-us-form-element::placeholder{
+    color: white;
+}
+.contact-us-form-element:focus{
+    outline: rgb(91,197,255);
+}
+@media only screen and (max-width: 750px){
+    .normal-header{
+       
+        width: 87%;
+    }
+    .search{
+        padding: 150px;
+        background-size: cover;
+    }
+    .nav-tab{
+        display: none;
+        width: 50%;
+        text-align: left;
+        padding: 20px;
+        margin: 5px;
+       
+    }
+    .nav-tab-visible{
+        display: block;
+        float: left;
+    }
+    .review-text{
+        font-size: 2vw;
+        width: 100%;
+    }
+    .mobil{
+        list-style-type: none;
+    color: white;
+ 
+    height: 100%;
+left: 0;
+top: 0;
+transition: all 1s ease; 
+    }
+   
+    #menu-bar{
+        float: right;
+        display: inline-block;
+    
+    }
+   
+    
+.review iframe{
+    width: 100%;
+    height: 100%;
+}
+.phone-general{
+    text-align: left;
+    padding: 100px;
+    background-color: rgb(91,197,255);
+    color: white;
+    margin-top: 50px;
+}
+.general-specs{
+    text-align: left;
+}
+
+.general-specs-img{
+    box-shadow: rgb(91,197,255);
+    border: none;
+  margin: 10px;
+    height: 20%;
+}
+.general-spec-text{
+    margin: 2px;
+    border: 1px rgb(0, 0, 0);
+    display: inline-block;
+}
+.general{
+    margin: 0px;
+}
+table{
+    text-align: left;
+}
+.table-header{
+    text-align:left;
+    font-size: 30px;
+}
+.table-list{
+    list-style-type: none;
+}
+.table-row{
+   width: 20%;
+   padding: 0px;
+    border-right: 1px white solid;
+}
+
+
+}
+@media only screen and (max-width: 450px){
+.phone-general{
+    padding: 75px;
+    margin-top: 80px;
+}
+.normal-header{
+    padding: 45px;
+    width: 84%;
+}
+.search h2{
+    font-size: 35px;
+}
+.contact-us{
+    padding: 100px;
+    margin-top: 50px;
+}
+}
