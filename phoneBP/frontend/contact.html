@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>PhoneReview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e9b049ff8c.js" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
+
 <body>
     <div class="loader_bg">
         <div class="loader">
-            <img src="https://i.pinimg.com/originals/70/7c/39/707c39bfff546612b5b4604fe86cda32.gif" width="200%" height="auto">
+            <img src="https://i.pinimg.com/originals/70/7c/39/707c39bfff546612b5b4604fe86cda32.gif" width="200%"
+                height="auto">
         </div>
     </div>
     <header class="normal-header">
-       
+
         <nav>
-        <h2 class="nav-item nav-header" onclick="location.href='index.html'">PHONEARENA</h2>
-      <div id="menu-bar"><i class="fas fa-ellipsis-h"></i></div>
-        <ul class="nav-item nav-tabs">
-                         <li class="nav-tab"  onclick="location.href='index.html'"><i class="fas fa-home"></i>Home</li>
-            <li class="nav-tab"><i class="fas fa-comment"></i> Reviews</li>
-            <li class="nav-tab"><i class="fas fa-video"></i> Videos</li>
-            <li class="nav-tab"  onclick="location.href='contact.html'"><i class="fas fa-phone"></i> Contact</li>
-        </ul>
-    </nav>
+            <h2 class="nav-item nav-header" onclick="location.href='index.html'">PHONEARENA</h2>
+            <div id="menu-bar"><i class="fas fa-ellipsis-h"></i></div>
+            <ul class="nav-item nav-tabs">
+                <li class="nav-tab" onclick="location.href='index.html'"><i class="fas fa-home"></i>Home</li>
+                <li class="nav-tab"><i class="fas fa-comment"></i> Reviews</li>
+                <li class="nav-tab"><i class="fas fa-video"></i> Videos</li>
+                <li class="nav-tab" onclick="location.href='contact.html'"><i class="fas fa-phone"></i> Contact</li>
+            </ul>
+        </nav>
     </header>
     <section class="contact-us">
         <div class="contact-us-header">
@@ -33,32 +36,33 @@
         </div>
         <div class="contact-us-form-div">
             <form method="POST" class="contact-us-form">
-<input class="contact-us-form-element" type="email" name="email" placeholder="Email">
-<input class="contact-us-form-element" type="text" name="name" placeholder="Ime">
-<textarea class="contact-us-form-element" rows="10" name="text" placeholder="Tekst"></textarea>
-<button type="submit" class="contact-us-form-button">Posalji poruku</button>
+                <input class="contact-us-form-element" type="email" name="email" placeholder="Email">
+                <input class="contact-us-form-element" type="text" name="name" placeholder="Ime">
+                <textarea class="contact-us-form-element" rows="10" name="text" placeholder="Tekst"></textarea>
+                <button type="submit" class="contact-us-form-button">Posalji poruku</button>
             </form>
         </div>
     </section>
     <footer>
         <div class="footer-section">
             <div class="footer-div">
-        <h2 class="nav-header">PHONEARENA</h2>
-        <p>Firma osnovana u Novom Sadu</p>
+                <h2 class="nav-header">PHONEARENA</h2>
+                <p>Firma osnovana u Novom Sadu</p>
+            </div>
+            <div class="footer-div">
+                <h2 class="nav-header">Posetite nas</h2>
+                <ul class="footer-links">
+                    <li><a href="facebook.com" class="footer-link"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="linkedin.com" class="footer-link"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="twitter.com" class="footer-link"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-div">
-        <h2 class="nav-header">Posetite nas</h2>
-        <ul class="footer-links">
-            <li><a href="facebook.com" class="footer-link"><i class="fab fa-facebook-square"></i></a></li>
-            <li ><a href="linkedin.com" class="footer-link"><i class="fab fa-linkedin"></i></a></li>
-            <li ><a href="twitter.com" class="footer-link"><i class="fab fa-twitter-square"></i></a></li>
-        </ul>
+        <div class="footer-section">
+            <h2>LOKACIJA</h2>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1Mz2Y1KidbQpFwID4tgG_-ZIgJQyJ_iWZ" width="640px"
+                height="480"></iframe>
         </div>
-    </div>
-    <div class="footer-section">
-        <h2>LOKACIJA</h2>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1Mz2Y1KidbQpFwID4tgG_-ZIgJQyJ_iWZ" width="640px" height="480"></iframe>
-    </div>
     </footer>
-<script src="app.js"></script>
-    </body>
+    <script src="app.js"></script>
+</body>

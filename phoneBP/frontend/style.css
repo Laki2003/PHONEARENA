@@ -94,7 +94,7 @@ font-size: 30px;
     display: inline-block;
 vertical-align: top;
 }
-.comment{
+#comment{
     text-align: left;
 }
 .comment-text{
@@ -104,7 +104,9 @@ vertical-align: top;
     width: 25%;
     word-wrap: break-word;
 }
-
+.fa-star{
+    cursor: pointer;
+}
 .reply-text{
     background: rgba(255, 255, 255, 0.356);
     padding:30px;
@@ -136,6 +138,21 @@ padding: 10px;
     color: rgb(91,197,255);
     margin-right: 10px;
 }
+.reply-form-div{
+    display: none;
+}
+.reply-form-div-visible{
+    display: block;
+}
+.liked{
+    color: rgb(131, 131, 131);
+}
+.yourRate{
+    display: none
+}
+.yourRate-visible{
+    display: block;
+}
 .comment-button{
     color: white;
     border: none;
@@ -145,6 +162,9 @@ padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     display: inline;
+}
+.liked{
+    color: rgb(160, 160, 160);
 }
 .form-input{
     margin: 15px;
@@ -209,7 +229,7 @@ transition: 2s;
     font-size: 15px;
     cursor: pointer;
 }
-.news{
+#news{
        background:rgb(91,197,255);
 }
 .details-button{
@@ -283,7 +303,7 @@ font-style: 'Fredoka One', cursive;
     color: white;
     transition: 1s;
 }
-.phone-general{
+#phone-general{
     text-align: center;
     padding: 200px;
     background-color: rgb(91,197,255);
@@ -420,7 +440,7 @@ transition: all 1s ease;
     width: 100%;
     height: 100%;
 }
-.phone-general{
+#phone-general{
     text-align: left;
     padding: 100px;
     background-color: rgb(91,197,255);
@@ -464,7 +484,7 @@ table{
 
 }
 @media only screen and (max-width: 450px){
-.phone-general{
+#phone-general{
     padding: 75px;
     margin-top: 80px;
 }
