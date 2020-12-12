@@ -1,0 +1,15 @@
+<section class='login'>
+    {{#if hasErrors}}
+    <div class="warning">
+        {{#each messages}}
+        <p>{{this}}</p>
+        {{/each}}
+            </div>
+            {{/if}}
+    <form class='login-form' method='post' action='/admin/login'>
+        <input type="email" id="email" name="email">
+        <input type="password" id="password" name='password'>
+<input type="hidden" name="_csrf" value="{{ csrfToken }}">
+        <button type='submit'></button>
+    </form>
+</section>
